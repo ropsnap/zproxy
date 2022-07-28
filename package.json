@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --reporter spec",
     "start": "node ./bin/proxy.js",
-    "up": "git add . && git commit -m up && git push origin main"
+    "up": "git add . && git commit -m up && git push origin master"
   },
   "bin": "./bin/proxy.js",
   "keywords": [
