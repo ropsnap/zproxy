@@ -22,10 +22,10 @@
     "via",
     "x-forwarded-for"
   ],
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
+  "author": "Nathan Rajlich + innercryerrr",
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/proxy.git"
+    "url": "https://github.com/innercryerrr/zproxy"
   },
   "license": "MIT",
   "dependencies": {
