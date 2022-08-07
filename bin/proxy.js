@@ -19,7 +19,7 @@ exit 1;'`
 args.option(
 	'port',
 	'Port number to the proxy server should bind to',
-	process.env.PORT,
+	3128,
 	parseInt
 )
 	.option(
