@@ -9,23 +9,16 @@ process.title = 'proxy';
 const args = require('args');
 const pkg = require('../package');
 
-const pxauthcmd = `'if \
-[ "$PROXY_AUTH_USERNAME" = "${process.env.USER}" ] && \
-[ "$PROXY_AUTH_PASSWORD" = "${process.env.PASS}" ]; \
-  then exit 0; \
-fi; \
-exit 1;'`
-
 args.option(
 	'port',
 	'Port number to the proxy server should bind to',
-	3128,
+	process.env.PORT || 3128,
 	parseInt
 )
 	.option(
 		'authenticate',
 		'"authenticate" command to run when the "Proxy-Authorization" header is sent',
-		pxauthcmd,
+		'',
 		String
 	)
 	.option(
