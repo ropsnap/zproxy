@@ -12,7 +12,7 @@ const pkg = require('../package');
 args.option(
 	'port',
 	'Port number to the proxy server should bind to',
-	3128,
+	process.env.PORT,
 	parseInt
 )
 	.option(
